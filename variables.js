@@ -102,3 +102,15 @@ y = (.2 * 10) - (.1 * 10)
 if (x == y) {
 	console.log(true)
 }
+
+/**
+ * Working with strings
+ */
+s = "My little string"
+console.log('first character: ' + s.charAt(0))
+console.log('second to 4th characters: ' + s.substring(1,4))
+console.log('second to 4th characters using slice: ' + s.slice(1,4))
+console.log('first index of l: ' + s.indexOf('l'))
+console.log('last index of l: ' + s.lastIndexOf('l'))
+console.log('first index of l on or after the 3rd character: ' + s.indexOf("l", 3))
+console.log('characters can also be referenced like arrays: ' + s[0])//ECMAScript 5 and above
