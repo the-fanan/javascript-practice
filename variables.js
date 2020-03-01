@@ -114,3 +114,17 @@ console.log('first index of l: ' + s.indexOf('l'))
 console.log('last index of l: ' + s.lastIndexOf('l'))
 console.log('first index of l on or after the 3rd character: ' + s.indexOf("l", 3))
 console.log('characters can also be referenced like arrays: ' + s[0])//ECMAScript 5 and above
+/**
+ * The following evaluate to false (==) any other value evaluates to true
+ */
+0; -0; null; undefined; NaN; "";
+
+//figuring out what a variable type a variable is
+x = 1; console.log(typeof(x));
+x = "String"; console.log(typeof(x));
+x = null; console.log(typeof(x));//why is null an object?
+x = [1,2,3]; console.log(typeof(x));//arrays are objects too, wow
+x = function(){return true;}; console.log(typeof(x));
+x = NaN; console.log(typeof(x));//NaN is a number but it is Not a Number :)
+x = undefined; console.log(typeof(x));
+x = true; console.log(typeof(x));
